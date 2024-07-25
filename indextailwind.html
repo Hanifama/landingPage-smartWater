@@ -11,7 +11,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        clifford: '#da373d', // Definisikan warna kustom untuk digunakan dalam tema Tailwind
                     }
                 }
             }
@@ -19,23 +19,26 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
-    <title>Smart Meter</title>
+    <title>Smart Meter</title> <!-- Judul halaman yang ditampilkan di tab browser -->
 </head>
 
 <body class="font-poppins scroll-smooth">
 
+    <!-- Navigasi -->
     <nav class="fixed inset-x-0 top-0 z-40 w-full bg-gray-100 py-4 px-4" x-data="{ open: false }">
         <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo dan Nama -->
             <div class="flex items-center">
                 <a href="#" class="flex items-center text-blue-600 text-lg font-bold">
                     <img src="/assets/logo.png" alt="logo" class="w-10 h-auto mr-2">
                     Smart Meter
                 </a>
             </div>
+            <!-- Tombol Menu untuk tampilan mobile -->
             <button class="text-gray-800 cursor-pointer text-2xl lg:hidden" @click="open = !open">
                 <i class="ri-menu-line"></i>
             </button>
+            <!-- Menu Navigasi -->
             <ul class="absolute top-16 left-0 w-full flex flex-col items-center gap-8 p-8 bg-gray-100 lg:flex lg:static lg:w-auto lg:flex-row lg:gap-4 lg:p-0 lg:bg-transparent lg:items-center"
                 :class="{ 'block': open, 'hidden': !open }">
                 <li><a href="/indextailwind.html" class="text-gray-800 hover:text-blue-600 font-medium">Home</a></li>
@@ -47,11 +50,11 @@
         </div>
     </nav>
 
+    <!-- Header -->
     <header
         class="relative bg-gray-800 text-white min-h-screen flex flex-col items-center justify-center text-center py-16 px-6">
-        <!-- Gambar-gambar yang diulang -->
+        <!-- Gambar latar belakang yang tersebar -->
         <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
-            <!-- Gambar-gambar latar belakang yang tersebar -->
             <div class="absolute inset-0 flex items-center justify-center">
                 <img src="assets/iconic.png" alt="header" class="absolute top-1 left-1 w-10 h-auto" />
                 <img src="assets/iconic.png" alt="header" class="absolute bottom-2 left-1 w-20 h-auto" />
@@ -63,7 +66,7 @@
                     class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-14 h-auto" />
             </div>
 
-            <!-- Konten utama -->
+            <!-- Konten Utama -->
             <div class="relative z-10 text-center">
                 <h1 class="text-5xl font-bold mb-6 leading-tight">
                     Cari, Daftar &<br />Dapatkan <span class="text-yellow-400">Smart Meter</span>
@@ -83,8 +86,7 @@
         </div>
     </header>
 
-
-
+    <!-- Bagian Langkah -->
     <section class="bg-cover bg-center" style="background-image: url('assets/steps-bg.png');">
         <div class="container mx-auto py-16 px-4 relative">
             <h2 class="text-center text-2xl font-bold text-gray-800 mb-4">
@@ -95,6 +97,7 @@
                 mulai berhemat. Semoga Beruntung!
             </p>
             <div class="grid gap-4 lg:grid-cols-4">
+                <!-- Langkah 1 -->
                 <div class="relative bg-white p-4 rounded-lg shadow-md transform -translate-y-8">
                     <span class="inline-block mb-4 p-2 text-2xl rounded-full bg-orange-50 text-orange-600">
                         <i class="ri-user-fill"></i>
@@ -103,6 +106,7 @@
                     <p class="text-gray-600">Buat akun dengan cepat dan mudah. Isi informasi dasar dan verifikasi email
                         anda.</p>
                 </div>
+                <!-- Langkah 2 -->
                 <div class="relative bg-white p-4 rounded-lg shadow-md transform translate-y-8">
                     <span class="inline-block mb-4 p-2 text-2xl rounded-full bg-purple-50 text-purple-600">
                         <i class="ri-search-fill"></i>
@@ -111,6 +115,7 @@
                     <p class="text-gray-600">Temukan peralatan yang tepat dengan fitur pencarian pintar. Sesuaikan
                         kebutuhan anda.</p>
                 </div>
+                <!-- Langkah 3 -->
                 <div class="relative bg-white p-4 rounded-lg shadow-md transform -translate-y-8">
                     <span class="inline-block mb-4 p-2 text-2xl rounded-full bg-teal-50 text-teal-600">
                         <i class="ri-file-paper-fill"></i>
@@ -119,6 +124,7 @@
                     <p class="text-gray-600">Unggah dokumen yang diperlukan seperti spesifikasi proyek anda. Pastikan
                         semua informasi lengkap dan akurat.</p>
                 </div>
+                <!-- Langkah 4 -->
                 <div class="relative bg-white p-4 rounded-lg shadow-md transform translate-y-8">
                     <span class="inline-block mb-4 p-2 text-2xl rounded-full bg-yellow-50 text-yellow-600">
                         <i class="ri-briefcase-fill"></i>
@@ -131,7 +137,7 @@
         </div>
     </section>
 
-
+    <!-- Bagian Dukungan -->
     <section class="bg-blue-600 text-white py-24 px-4 mt-10">
         <div class="container mx-auto flex flex-col items-start">
             <h2 class="text-2xl font-bold mb-4">
@@ -147,10 +153,10 @@
         </div>
     </section>
 
-
+    <!-- Footer -->
     <footer class="bg-gray-100 py-8">
         <div class="container mx-auto grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
-            <!-- Logo and Links -->
+            <!-- Logo dan Link -->
             <div>
                 <a href="#" class="flex items-center text-blue-600 text-lg font-bold mb-4">
                     <img src="/assets/logo.png" alt="logo" class="w-10 h-auto mr-2">
@@ -159,7 +165,7 @@
                 <p class="text-gray-600">Home | About | Register</p>
             </div>
 
-            <!-- Contact Info -->
+            <!-- Info Kontak -->
             <div class="space-y-6">
                 <div class="flex items-start">
                     <img src="/assets/location.png" alt="icon location" class="w-8 h-auto mr-4">
@@ -186,8 +192,9 @@
             </div>
 
         </div>
-
     </footer>
+
+    <!-- Bagian Hak Cipta -->
     <div class="bg-gray-200 py-4 text-center">
         <p class="text-gray-600">&copy; 2024 Smart Meter. All rights reserved.</p>
     </div>

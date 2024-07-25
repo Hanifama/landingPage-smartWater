@@ -2,18 +2,28 @@
 <html lang="en">
 
 <head>
+  <!-- Mengatur karakter encoding dan viewport untuk responsivitas -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Menyertakan ikon Remix untuk ikon-ikon font -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  
+  <!-- Menyertakan stylesheet Swiper untuk slider -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Menyertakan stylesheet kustom -->
   <link rel="stylesheet" href="styles.css" />
+  
   <title>About Smart Meter</title>
 </head>
 
 <body>
 
+  <!-- Navigasi utama -->
   <nav>
     <div class="nav__header">
+      <!-- Logo dan tautan ke halaman utama -->
       <div class="nav__logo">
         <a href="#" class="logo">
           <img src="/assets/logo.png" alt="logo" class="logo__image">
@@ -21,10 +31,12 @@
         </a>
       </div>
 
+      <!-- Tombol menu untuk tampilan mobile -->
       <div class="nav__menu__btn" id="menu-btn">
         <i class="ri-menu-line"></i>
       </div>
     </div>
+    <!-- Menu navigasi -->
     <ul class="nav__links" id="nav-links">
       <li><a href="/index.html">Home</a></li>
       <li><a href="/about.html">About</a></li>
@@ -32,17 +44,22 @@
     </ul>
   </nav>
 
+  <!-- Bagian header dengan gambar dan deskripsi tentang Smart Meter -->
   <header class="section__container header__container" id="home">
+    <!-- Gambar dekoratif di header -->
     <img src="assets/iconic.png" alt="header" />
     <img src="assets/iconic.png" alt="header" />
     <img src="assets/iconic.png" alt="header" />
     <img src="assets/iconic.png" alt="header" />
     <img src="assets/iconic.png" alt="header" />
     <img src="assets/iconic.png" alt="header" />
-    <div class="about ">
+    <!-- Konten tentang Smart Meter -->
+    <div class="about">
+        <!-- Gambar terkait Smart Meter -->
         <img src="/assets/watermeter.png" alt="" class="about__image">
         <div class="about__description">
             <h1>Tentang <span>Smart Meter</span></h1>
+            <!-- Deskripsi Smart Meter -->
             <p>
                 Smart meter memungkinkan pengguna untuk memantau konsumsi energi secara real-time, energi dan mengurangi jejak
                 karbon rumah tangga, membawa perubahan menuju rumah pintar yang lebih berkelanjutan.
@@ -59,6 +76,7 @@
     </div>
   </header>
 
+  <!-- Bagian untuk kontak dan dukungan -->
   <section class="card__container">
     <h2 class="faq__header">
       Ada pertanyaan atau butuh bantuan? Hubungi tim dukungan kami kapan saja.
@@ -66,14 +84,17 @@
     <p class="faq__description">
       tetap terhubung dan ikuti kami di media sosial untuk pembaruan terbaru
     </p>
+    <!-- Tombol kontak -->
     <button class="faq__button">
       <img src="/assets/phone.png" alt="icon phone">
       Kontak Kami
     </button>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="section__container footer__container">
+      <!-- Logo dan tautan di footer -->
       <div class="footer__col">
         <div class="footer__logo">
           <a href="#" class="logo">
@@ -86,6 +107,7 @@
         </p>
       </div>
 
+      <!-- Informasi kontak di footer -->
       <div class="contact__container">
         <div class="contact__item">
           <img src="/assets/location.png" alt="icon location">
@@ -109,14 +131,14 @@
           </div>
         </div>
       </div>
-      
-
     </div>
+    <!-- Hak cipta di footer -->
     <div class="footer__bar">
       Copyright © 2024 by PT.LSKK
     </div>
   </footer>
 
+  <!-- Menyertakan skrip untuk animasi dan Swiper -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>

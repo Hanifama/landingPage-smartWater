@@ -2,9 +2,14 @@
 <html lang="en">
 
 <head>
+    <!-- Mengatur karakter encoding dan viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Ikon situs web -->
     <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Menyertakan Tailwind CSS untuk styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -17,25 +22,31 @@
             }
         }
     </script>
+
+    <!-- Mengimpor font Poppins dari Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+
     <title>Smart Meter</title>
 </head>
 
 <body class="font-poppins scroll-smooth">
 
+    <!-- Navigasi utama -->
     <nav class="fixed inset-x-0 top-0 z-40 w-full bg-gray-100 py-4 px-4" x-data="{ open: false }">
         <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo dan nama situs -->
             <div class="flex items-center">
                 <a href="#" class="flex items-center text-blue-600 text-lg font-bold">
                     <img src="/assets/logo.png" alt="logo" class="w-10 h-auto mr-2">
                     Smart Meter
                 </a>
             </div>
+            <!-- Tombol untuk menu mobile -->
             <button class="text-gray-800 cursor-pointer text-2xl lg:hidden" @click="open = !open">
                 <i class="ri-menu-line"></i>
             </button>
+            <!-- Menu navigasi -->
             <ul class="absolute top-16 left-0 w-full flex flex-col items-center gap-8 p-8 bg-gray-100 lg:flex lg:static lg:w-auto lg:flex-row lg:gap-4 lg:p-0 lg:bg-transparent lg:items-center"
                 :class="{ 'block': open, 'hidden': !open }">
                 <li><a href="/indextailwind.html" class="text-gray-800 hover:text-blue-600 font-medium">Home</a></li>
@@ -47,17 +58,21 @@
         </div>
     </nav>
 
+    <!-- Bagian header dengan background warna biru -->
     <section class="bg-blue-600 text-white py-24 px-4 mt-10">
         <div class="container mx-auto flex flex-col items-center justify-center">
+            <!-- Judul bagian header -->
             <h2 class="text-7xl font-bold mb-4 text-center">
                 ABOUT
             </h2>
         </div>
     </section>
 
+    <!-- Bagian konten utama dengan gambar dan teks -->
     <section class="flex items-center min-h-screen max-w-screen-lg mx-auto p-4">
         <img src="/assets/watermeter.png" alt="" class="w-1/3 max-w-xs h-80 mr-5">
         <div class="w-2/3">
+            <!-- Judul dan teks deskriptif tentang Smart Meter -->
             <h1 class="text-xl font-bold text-gray-800 mb-4">
                 Tentang <span class="text-blue-600">Smart Meter</span>
             </h1>
@@ -68,8 +83,10 @@
         </div>
     </section>
 
+    <!-- Bagian dukungan dengan tombol kontak -->
     <section class="bg-blue-600 text-white py-24 px-4 mt-10">
         <div class="container mx-auto flex flex-col items-start">
+            <!-- Judul dan deskripsi dukungan -->
             <h2 class="text-2xl font-bold mb-4">
                 Ada pertanyaan atau butuh bantuan? Hubungi tim dukungan kami kapan saja.
             </h2>
@@ -83,9 +100,10 @@
         </div>
     </section>
 
+    <!-- Footer dengan informasi kontak -->
     <footer class="bg-gray-100 py-8">
         <div class="container mx-auto grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
-            <!-- Logo and Links -->
+            <!-- Logo dan tautan -->
             <div>
                 <a href="#" class="flex items-center text-blue-600 text-lg font-bold mb-4">
                     <img src="/assets/logo.png" alt="logo" class="w-10 h-auto mr-2">
@@ -94,7 +112,7 @@
                 <p class="text-gray-600">Home | About | Register</p>
             </div>
 
-            <!-- Contact Info -->
+            <!-- Informasi kontak -->
             <div class="space-y-6">
                 <div class="flex items-start">
                     <img src="/assets/location.png" alt="icon location" class="w-8 h-auto mr-4">
@@ -119,10 +137,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </footer>
+
+    <!-- Bagian hak cipta di bagian bawah halaman -->
     <div class="bg-gray-200 py-4 text-center">
         <p class="text-gray-600">&copy; 2024 Smart Meter. All rights reserved.</p>
     </div>
