@@ -1,14 +1,20 @@
+# **Smart Meter**
+
 **Smart Meter** adalah solusi inovatif untuk memantau konsumsi energi rumah tangga secara real-time dan mengurangi jejak karbon. Proyek ini bertujuan untuk menyediakan alat yang efisien dan mudah digunakan untuk membantu pengguna mengelola energi mereka dengan lebih baik.
 
+## **Logo Smart Meter**
 
-**Logo Smart Meter**
-<img src="./assets/logo.png" alt="Smart Meter Logo" width="150"/>
+<img src="./assets/logo.png" alt="Smart Meter Logo" width="150" style="display:block; margin: 0 auto;"/>
 
-**LandingPage Smart Meter**
-<img src="./assets/css.png" alt="Smart Meter Landing Page CSS" width="600"/>
+## **Landing Page Smart Meter**
 
-**LandingPage Smart Meter**
-<img src="./assets/tailwind.png" alt="Smart Meter Landing Page Tailwind" width="600"/>
+### **Desain CSS**
+
+<img src="./assets/css.png" alt="Smart Meter Landing Page CSS" width="600" style="display:block; margin: 0 auto;"/>
+
+### **Desain dengan Tailwind**
+
+<img src="./assets/tailwind.png" alt="Smart Meter Landing Page Tailwind" width="600" style="display:block; margin: 0 auto;"/>
 
 ## 🚀 Fitur Utama
 Desain Responsif: Halaman yang dapat diakses dengan baik di berbagai perangkat.
