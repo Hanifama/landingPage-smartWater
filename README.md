@@ -1,12 +1,14 @@
-# **Smart Meter**
-
-![Smart Meter Logo](./assets/logo.png)
-
-![Smart Meter Landing Page CSS](./assets/css.png)
-
-![Smart Meter Landing Page Tailwind](./assets/tailwind.png)
-
 **Smart Meter** adalah solusi inovatif untuk memantau konsumsi energi rumah tangga secara real-time dan mengurangi jejak karbon. Proyek ini bertujuan untuk menyediakan alat yang efisien dan mudah digunakan untuk membantu pengguna mengelola energi mereka dengan lebih baik.
+
+
+**Logo Smart Meter**
+<img src="./assets/logo.png" alt="Smart Meter Logo" width="150"/>
+
+**LandingPage Smart Meter**
+<img src="./assets/css.png" alt="Smart Meter Landing Page CSS" width="600"/>
+
+**LandingPage Smart Meter**
+<img src="./assets/tailwind.png" alt="Smart Meter Landing Page Tailwind" width="600"/>
 
 ## 🚀 Fitur Utama
 Desain Responsif: Halaman yang dapat diakses dengan baik di berbagai perangkat.
@@ -23,7 +25,7 @@ Editor Teks: Untuk mengedit file, seperti Visual Studio Code atau Sublime Text.
 1. Clone repositori ini:
 
     ```bash
-    git clone https://github.com/hanifama/smart-meter.git
+    git clone https://github.com/Hanifama/landingPage-smartWater.git
     ```
 
 2. Masuk ke direktori proyek:
@@ -33,7 +35,6 @@ Editor Teks: Untuk mengedit file, seperti Visual Studio Code atau Sublime Text.
     ```
 
 3. Buka File di Chorome temen temen semua
-
     ```
 
 ## 📚 Penggunaan
