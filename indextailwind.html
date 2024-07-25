@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <title>Smart Meter</title>
+</head>
+
+<body class="font-poppins scroll-smooth">
+
+    <nav class="fixed inset-x-0 top-0 z-40 w-full bg-gray-100 py-4 px-4" x-data="{ open: false }">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#" class="flex items-center text-blue-600 text-lg font-bold">
+                    <img src="/assets/logo.png" alt="logo" class="w-10 h-auto mr-2">
+                    Smart Meter
+                </a>
+            </div>
+            <button class="text-gray-800 cursor-pointer text-2xl lg:hidden" @click="open = !open">
+                <i class="ri-menu-line"></i>
+            </button>
+            <ul class="absolute top-16 left-0 w-full flex flex-col items-center gap-8 p-8 bg-gray-100 lg:flex lg:static lg:w-auto lg:flex-row lg:gap-4 lg:p-0 lg:bg-transparent lg:items-center"
+                :class="{ 'block': open, 'hidden': !open }">
+                <li><a href="/indextailwind.html" class="text-gray-800 hover:text-blue-600 font-medium">Home</a></li>
+                <li><a href="/abouttailwind.html" class="text-gray-800 hover:text-blue-600 font-medium">About</a></li>
+                <li><button
+                        class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Register</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header
+        class="relative bg-gray-800 text-white min-h-screen flex flex-col items-center justify-center text-center py-16 px-6">
+        <!-- Gambar-gambar yang diulang -->
+        <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <!-- Gambar-gambar latar belakang yang tersebar -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <img src="assets/iconic.png" alt="header" class="absolute top-1 left-1 w-10 h-auto" />
+                <img src="assets/iconic.png" alt="header" class="absolute bottom-2 left-1 w-20 h-auto" />
+                <img src="assets/iconic.png" alt="header" class="absolute top-7 right-1 w-10 h-auto" />
+                <img src="assets/iconic.png" alt="header" class="absolute bottom-0 right-3 w-10 h-auto" />
+                <img src="assets/iconic.png" alt="header"
+                    class="absolute top-1 left-1/2 transform -translate-x-1/2 w-9 h-auto" />
+                <img src="assets/iconic.png" alt="header"
+                    class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-14 h-auto" />
+            </div>
+
+            <!-- Konten utama -->
+            <div class="relative z-10 text-center">
+                <h1 class="text-5xl font-bold mb-6 leading-tight">
+                    Cari, Daftar &<br />Dapatkan <span class="text-yellow-400">Smart Meter</span>
+                </h1>
+                <p class="text-xl mb-8 text-center max-w-4xl mx-auto leading-relaxed">
+                    Smart meter memungkinkan pengguna untuk memantau konsumsi energi secara real-time,
+                    mengurangi jejak karbon rumah tangga, dan membawa perubahan menuju rumah pintar
+                    yang lebih berkelanjutan.
+                </p>
+                <div class="header__btns">
+                    <button
+                        class="bg-yellow-400 text-gray-800 py-3 px-8 rounded-lg font-semibold hover:bg-yellow-500 transition">
+                        Lebih Lanjut
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="bg-cover bg-center" style="background-image: url('assets/steps-bg.png');">
+        <div class="container mx-auto py-16 px-4 relative">
+            <h2 class="text-center text-2xl font-bold text-gray-800 mb-4">
+                Dapatkan Dalam 4 <span class="text-blue-600">Langkah Mudah</span>
+            </h2>
+            <p class="text-center text-gray-600 text-base mb-8 mx-auto max-w-4xl">
+                Dapatkan Smart Meter anda hari ini! Ikuti langkah mudah untuk penggunaan energi yang lebih efisien dan
+                mulai berhemat. Semoga Beruntung!
+            </p>
+            <div class="grid gap-4 lg:grid-cols-4">
+                <div class="relative bg-white p-4 rounded-lg shadow-md transform -translate-y-8">
+                    <span class="inline-block mb-4 p-2 text-2xl rounded-full bg-orange-50 text-orange-600">
+                        <i class="ri-user-fill"></i>
+                    </span>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Buat Akun</h4>
+                    <p class="text-gray-600">Buat akun dengan cepat dan mudah. Isi informasi dasar dan verifikasi email
+                        anda.</p>
+                </div>
+                <div class="relative bg-white p-4 rounded-lg shadow-md transform translate-y-8">
+                    <span class="inline-block mb-4 p-2 text-2xl rounded-full bg-purple-50 text-purple-600">
+                        <i class="ri-search-fill"></i>
+                    </span>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Pencarian Pintar</h4>
+                    <p class="text-gray-600">Temukan peralatan yang tepat dengan fitur pencarian pintar. Sesuaikan
+                        kebutuhan anda.</p>
+                </div>
+                <div class="relative bg-white p-4 rounded-lg shadow-md transform -translate-y-8">
+                    <span class="inline-block mb-4 p-2 text-2xl rounded-full bg-teal-50 text-teal-600">
+                        <i class="ri-file-paper-fill"></i>
+                    </span>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Upload</h4>
+                    <p class="text-gray-600">Unggah dokumen yang diperlukan seperti spesifikasi proyek anda. Pastikan
+                        semua informasi lengkap dan akurat.</p>
+                </div>
+                <div class="relative bg-white p-4 rounded-lg shadow-md transform translate-y-8">
+                    <span class="inline-block mb-4 p-2 text-2xl rounded-full bg-yellow-50 text-yellow-600">
+                        <i class="ri-briefcase-fill"></i>
+                    </span>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Dapatkan Smart Meter</h4>
+                    <p class="text-gray-600">Setelah verifikasi, perangkat anda akan dikirimkan ke alamat anda. Pasang
+                        dan mulai gunakan untuk memantau dengan alat pintar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-blue-600 text-white py-24 px-4 mt-10">
+        <div class="container mx-auto flex flex-col items-start">
+            <h2 class="text-2xl font-bold mb-4">
+                Ada pertanyaan atau butuh bantuan? Hubungi tim dukungan kami kapan saja.
+            </h2>
+            <p class="text-base mb-6">
+                Tetap terhubung dan ikuti kami di media sosial untuk pembaruan terbaru
+            </p>
+            <button class="flex items-center bg-white text-blue-600 py-2 px-4 rounded-md">
+                <img src="/assets/phone.png" alt="icon phone" class="w-5 h-auto mr-2">
+                Kontak Kami
+            </button>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-100 py-8">
+        <div class="container mx-auto grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+            <!-- Logo and Links -->
+            <div>
+                <a href="#" class="flex items-center text-blue-600 text-lg font-bold mb-4">
+                    <img src="/assets/logo.png" alt="logo" class="w-10 h-auto mr-2">
+                    Smart Meter
+                </a>
+                <p class="text-gray-600">Home | About | Register</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <img src="/assets/location.png" alt="icon location" class="w-8 h-auto mr-4">
+                    <div>
+                        <h4 class="text-blue-600 text-lg font-semibold mb-1">Lokasi</h4>
+                        <p class="text-gray-600 whitespace-nowrap">Jl Pelajar Pejuang 45 No.65, Lingkar.Selatan,
+                            Lengkong, Kota Bandung, Jawa Barat 40263</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img src="/assets/email.png" alt="icon email" class="w-8 h-auto mr-4">
+                    <div>
+                        <h4 class="text-blue-600 text-lg font-semibold mb-1">Email</h4>
+                        <p class="text-gray-600">support@smartmeter.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img src="/assets/phone.png" alt="icon phone" class="w-8 h-auto mr-4">
+                    <div>
+                        <h4 class="text-blue-600 text-lg font-semibold mb-1">Telepon</h4>
+                        <p class="text-gray-600">+62 123 4567</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="bg-gray-200 py-4 text-center">
+        <p class="text-gray-600">&copy; 2024 Smart Meter. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>
