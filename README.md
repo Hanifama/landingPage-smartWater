@@ -2,7 +2,7 @@
 
 **Smart Meter** adalah solusi inovatif untuk memantau konsumsi energi rumah tangga secara real-time dan mengurangi jejak karbon. Proyek ini bertujuan untuk menyediakan alat yang efisien dan mudah digunakan untuk membantu pengguna mengelola energi mereka dengan lebih baik.
 
-## **Logo Smart Meter**
+## **Logo Smart Meter** 
 
 <img src="./assets/logo.png" alt="Smart Meter Logo" width="150" style="display:block; margin: 0 auto;"/>
 
